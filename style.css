@@ -7,7 +7,6 @@ body {
     justify-content: center;
 }
 
-
 h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -17,7 +16,7 @@ h1 {
 .form-container {
     background-color: white;
     padding: 3.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 400px;
     border-radius: 14px;
 }
@@ -25,6 +24,8 @@ h1 {
 .form-group {
     flex: 1;
     margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group:last-child {
@@ -33,7 +34,7 @@ h1 {
 
 .form-row {
     display: flex;
-    flex-direction: space-between;
+    flex-direction: row;
     margin-bottom: 1rem;
 }
 label {
@@ -51,32 +52,29 @@ select {
     background-color: #fafafa;
     border-radius: 8px;
     box-sizing: border-box;
+    
 }
 
 .radio-group {
     display: flex;
     align-items: center;
-    margin-top: 0.5rem;  /* Add some top margin to align with other inputs */
+    margin-top: 0.5rem;
 }
-.radio-group input[type="radio"] {
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.radio-item input[type="radio"] {
     margin-right: 0.5rem;
     accent-color: #7bb457;
 }
-.radio-item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+.radio-item label {
+    margin-bottom: 0;
 }
-.radio-group label {
-    margin-right: 1.5rem;
-    display: flex;
-    align-items: center;
-}
-.radio-item label{
-    
-}
+
 .submit {
     margin-top: 1rem;
     background-color: #5a73d0;
